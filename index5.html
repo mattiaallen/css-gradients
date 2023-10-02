@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css gradianets</title>
+    <style>
+        #grad1 {
+          height: 200px;
+          background-color: rgb(74, 63, 162); /* For browsers that do not support gradients */
+          background-image: repeating-radial-gradient(rgb(0, 105, 137), rgb(219, 255, 239)10%, rgb(23, 46, 23)15%);
+        }
+        #grad2 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: repeating-linear-gradient(rgb(0, 105, 137), rgb(219, 255, 239)5%, rgb(23, 46, 23)5%);
+        }
+        #grad3 {
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0); 
+          background-image: radial-gradient( rgb(0, 105, 137), rgba(0, 0, 0, 0));
+        }
+        #grad4 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: linear-gradient(217deg, rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0) 70.71% ), 
+                            linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+                            linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+        }
+    
+
+        #grad5 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(farthest-side, rgb(0, 105, 137), rgb(219, 255, 239), rgb(23, 46, 23));
+        }
+        #grad6 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(farthest-side at 90% 55%, rgb(0, 105, 137), rgb(219, 255, 239), rgb(23, 46, 23));
+        }
+        #grad7 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(closest-side at 90% 55%, rgb(0, 105, 137), rgb(219, 255, 239), rgb(23, 46, 23));
+        }
+        </style>
+</head>
+<body>
+  <h1>Wow CSS Gradianets </h1>  
+
+<h2>Some Fancy Stuff</h2>
+<h3>You can make them repeat. </h3>
+<p>Just type <strong>"repeating-radial-gradient(color1, color2 10%, color 3 15%);"</strong> you do have to had some boundries to the colors to indicate the size of the repeating gradianets.</p>
+<div id="grad1"></div>
+
+<p>Here I made the gradianets much smaller "repeating-linear-gradient(color1, color2 <strong>5%</strong>, color3 <strong>5%</strong>);"</p>
+<div id="grad2"></div>
+
+<h3>You can make the gradient fade away. </h3>
+<p>Using alpha you can change the opacity of any of the colors, so you could make your gradient go completely transparent.  "radial-gradient( color1, <strong>color2 (like rgba(0, 0, 0, 0))</strong>);"</p>
+<div id="grad3"></div>
+
+
+<h3>Stack them up.</h3> 
+<p>  This has three gradients stacked on top of eachother to get this effect. It looks like this:</p> 
+<p>“background-image: linear-gradient(217deg, rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0) 70.71% ), </p>
+   <p> linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), </p>
+    <p>linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);” </p>
+<p>as you can see, it uses hue and opacity.</p>
+<div id="grad4"></div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

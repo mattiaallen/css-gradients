@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css gradianets</title>
+    <style>
+        #grad1 {
+          height: 200px;
+          background-color: rgb(74, 63, 162); /* For browsers that do not support gradients */
+          background-image: linear-gradient(rgb(0, 255, 225), rgb(17, 17, 21));
+        }
+        #grad2 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: linear-gradient(to right, rgb(0, 255, 225), rgb(17, 17, 21));
+        }
+        #grad3 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: linear-gradient(to bottom right, rgb(0, 255, 225), rgb(17, 17, 21));
+        }
+        #grad4 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: linear-gradient(75deg, rgb(0, 255, 225), rgb(17, 17, 21));
+        }
+        </style>
+</head>
+<body>
+  <h1>Wow CSS Gradianets </h1>  
+
+<h2>LINEAR</h2>
+<p>Default (top to bottom).</p>
+<p>Just type "linear-gradient(color1, color2)"</p>
+<div id="grad1"></div>
+
+<h3>You can do left to right.</h3>
+<p>Just type "linear-gradient(<strong>to right, </strong>color1, color2)"</p>
+<div id="grad2"></div>
+
+<h3>You can do diagonals too! </h3>
+<p>Just type "linear-gradient(<strong>to bottom right, </strong>color1, color2)"</p>
+<div id="grad3"></div>
+
+<h3>You can use degrees to rotate the gradient as well.</h3> 
+<p> You’ll need to use degrees for this so type “linear-gradient(<strong>75deg,</strong> rgb(0, 255, 225), rgb(17, 17, 21));”</p>
+<div id="grad4"></div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

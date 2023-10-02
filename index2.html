@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css gradianets</title>
+    <style>
+        #grad1 {
+          height: 200px;
+          background-color: rgb(74, 63, 162); /* For browsers that do not support gradients */
+          background-image: radial-gradient(rgb(181, 211, 220), rgb(153, 0, 255), rgb(21, 18, 17));
+        }
+        #grad2 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(rgb(181, 211, 220)5%, rgb(153, 0, 255)15%, rgb(21, 18, 17)60%);
+        }
+        #grad3 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(circle, rgb(181, 211, 220), rgb(153, 0, 255), rgb(21, 18, 17));
+        }
+        #grad4 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(closest-side, rgb(181, 211, 220), rgb(153, 0, 255), rgb(21, 18, 17));
+        }
+
+        #grad5 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(farthest-side, rgb(181, 211, 220), rgb(153, 0, 255), rgb(21, 18, 17));
+        }
+        #grad6 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(farthest-side at 90% 55%, rgb(181, 211, 220), rgb(153, 0, 255), rgb(21, 18, 17));
+        }
+        #grad7 {
+        height: 200px;
+        background-color: rgb(74, 63, 162); 
+          background-image: radial-gradient(closest-side at 90% 55%, rgb(181, 211, 220), rgb(153, 0, 255), rgb(21, 18, 17));
+        }
+        </style>
+</head>
+<body>
+  <h1>Wow CSS Gradianets </h1>  
+
+<h2>The same goes with Radial Gradianets</h2>
+<h3>Default</h3>
+<p>Just type "radial-gradient(color1, color2, color3);"</p>
+<div id="grad1"></div>
+
+<h3>You can change the space of the colors.</h3>
+<p>Just type "radial-gradient(color1 <strong>5%</strong>, color2 <strong>15%</strong>, color3 <strong>60%</strong>);"</p>
+<div id="grad2"></div>
+
+<h3>Change the shape. </h3>
+<p>The default is an oval but you can make it a circle type "linear-gradient(<strong>circle, </strong>color1, color2, color 3)"</p>
+<div id="grad3"></div>
+<p>Woah! The gradient seems so big now! Don’t worry, we will learn how to change its size.</p>
+
+<p>The size keywords are
+    <ul>closest-side</ul>
+    <ul>farthest-side</ul>
+    <ul>closest-corner</ul>
+    <ul>farthest-corner</ul>
+
+All of these refer to the center of the gradient and the specified side or corner of the image window.  So for example Closest-Side will extend the gradient to the side closet to it but Farthest-Corner will push the gradient all the way to the farthest corner, even if the fest of the gradient overflows from the image window.
+</p>
+
+<h3>Some examples.</h3> 
+<p>This gradient is the default one</p>
+<div id="grad1"></div>
+
+<p> This gradient has Closest-Side added to it, so the whole thing does not cross the nearest side, which happens to be the top and bottom.  “linear-gradient(<strong>closest-side,</strong> rgb(0, 255, 225), rgb(17, 17, 21));”</p>
+<div id="grad4"></div>
+
+<p>However this one has Farthest-Side added to it, and now it goes all the way to the left and right sides but does not pass them? “linear-gradient(<strong>farthest-side,</strong> rgb(0, 255, 225), rgb(17, 17, 21));”</p>
+<div id="grad5"></div>
+
+<p>It can be a little more obviously if we move the grandaunt away from the middle of the viewing window, like this “linear-gradient(<strong>farthest-side at 90% 55%,</strong> rgb(0, 255, 225), rgb(17, 17, 21));” </p>
+<p>Now you can see the center of the gradient is almost all the way to the right, but the left side of it still stretches all the way to the left side because it was told to expend to the Farthest-Side.</p>
+<div id="grad6"></div>
+
+<p>Let’s do the same thing but make sure the gradient it bound to the Closest-Side. Tada! Look how small it is! That's because it went to the closest side and then stopped.</p>
+<div id="grad7"></div>
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
